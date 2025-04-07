@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: SimSun, serif;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+        .header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .photo-cell {
+            width: 100px;
+            height: 120px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .photo-cell img {
+            width: 90px;
+            height: 110px;
+            object-fit: cover;
+        }
+        /* 新增灰色背景样式 */
+        .section-header {
+            background-color: #f0f0f0; /* 浅灰色背景 */
+            font-weight: bold;        /* 加粗文字 */
+        }
+        /* 图标样式优化 */
+        .icon-cell {
+            white-space: nowrap;      /* 防止图标换行 */
+        }
+		
+
+    </style>
+</head>
+<body>
+    <div class="header">个人简历</div>
+    
+    <!-- 整体单表格实现 -->
+    <table>
+        <!-- 第1行：基本信息 -->
+        <tr>
+            <td class="section-header">姓名</td>
+            <td>丁晓萱</td>
+            <td class="section-header">性别</td>
+            <td>女</td>
+            <td class="section-header">年龄</td>
+            <td>18</td>
+            <td rowspan="3" class="photo-cell">
+                <img src="img/丁晓萱.证件照.jpg" alt="个人照片">
+            </td>
+        </tr>
+        
+        <!-- 第2行：联系方式（带图标） -->
+        <tr>
+            <td class="section-header icon-cell">🏠籍贯</td>
+            <td>山东泰安</td>
+            <td class="section-header icon-cell">☎️联系电话</td>
+            <td>19709583192</td>
+            <td class="section-header icon-cell">📮电子邮箱</td>
+            <td>2053132326@qq.com</td>
+        </tr>
+        
+        <!-- 第3行：学历信息（带图标） -->
+        <tr>
+            <td class="section-header icon-cell">🎓学历</td>
+            <td>本科</td>
+            <td class="section-header icon-cell">❤️健康状况</td>
+            <td>良好</td>
+            <td class="section-header icon-cell">👰婚姻状况</td>
+            <td>未婚</td>
+        </tr>
+        
+        <!-- 第4行：求职信息（带图标） -->
+        <tr>
+            <td class="section-header icon-cell">💻求职意向</td>
+            <td>软件工程师</td>
+            <td class="section-header icon-cell">📖专业</td>
+            <td>软件工程</td>
+            <td class="section-header icon-cell">🏫毕业院校</td>
+            <td colspan="2">鲁东大学</td>
+        </tr>
+        
+        <!-- 技能证书 -->
+        <tr>
+            <td class="section-header">技能证书</td>
+            <td colspan="6">
+                <div>无</div>
+            </td>
+        </tr>
+        
+        <!-- 个人特长 -->
+        <tr>
+            <td class="section-header">个人特长与爱好</td>
+            <td colspan="6">
+                <ul>
+                    <li>擅长C语言编程,前端设计</li>
+					<li>有实验室学习经历，在实验室中得过奖，具有团队精神</li>
+                    <li>喜欢运动：羽毛球，滑板，活力板，陆冲板，密室</li>
+                </ul>
+            </td>
+        </tr>
+        
+        <!-- 项目经历 -->
+        <tr>
+            <td class="section-header">项目经历</td>
+            <td colspan="6">暂无项目经历</td>
+        </tr>
+        
+        <!-- 自我评价 -->
+        <tr>
+            <td class="section-header">自我评价</td>
+            <td colspan="6">
+                <p>作为一名软件工程专业学生，
+                我具备扎实的编程基础和系统化的计算机知识体系。
+                熟练掌握Java/Python开发，能使用Spring Boot和Django框架完成项目搭建。
+                性格开朗乐观，善于沟通协作，在团队项目中常担任技术协调角色。
+                拥有快速学习能力。注重代码规范，熟悉Git版本控制，有良好的文档编写习惯。
+                生活中热爱绘画和羽毛球，曾获校级艺术展二等奖，这些经历培养了我的耐心和专注力。
+                
+                职业目标是成为全栈开发工程师，目前正在学习云计算相关技术，希望未来能参与分布式系统开发。</p>
+            </td>
+        </tr>
+    </table>
+	
+</body>
+</html>
